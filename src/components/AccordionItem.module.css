@@ -1,0 +1,29 @@
+.close {
+  transform: rotate(180deg);
+  stroke: var(--color-primary-red);
+}
+.open {
+  stroke: "#5267DF";
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem 0 2.2rem 0;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+  font-weight: 500;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.accordionContent {
+  margin-bottom: 3.2rem;
+  margin-top: 1rem;
+  color: var(--color-secondary-grey);
+}
+
+.accordionTitle:hover {
+  color: var(--color-primary-red);
+}

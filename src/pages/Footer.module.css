@@ -1,0 +1,74 @@
+.footer {
+  background-color: var(--color-primary-blue);
+  color: #fff;
+}
+.containerFooter {
+  padding: 4.8rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+.footerSpan {
+  display: block;
+  margin-bottom: 4.8rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.footerTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.footerForm {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr;
+}
+.footer input {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: inherit;
+  border-radius: 7px;
+  border: none;
+}
+.formError,
+.formError:focus {
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 2px var(--color-primary-red);
+  outline: unset;
+}
+.bg {
+  position: relative;
+}
+.inputErr {
+  position: absolute;
+  color: #fff;
+  background-color: var(--color-primary-red);
+  font-size: 1.4rem;
+  right: 0;
+  padding: 1rem;
+  font-family: inherit;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.iconErr {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+@media (max-width: 34em) {
+  .footerForm {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+    width: 80%;
+  }
+}

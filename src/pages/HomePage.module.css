@@ -1,0 +1,67 @@
+.sectionHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* gap: 9.6rem; */
+
+  padding: 4.8rem 0 4.8rem 0;
+}
+.heroTextBox {
+  width: 37rem;
+}
+.heroImg {
+  width: 100%;
+  z-index: 10;
+}
+.bgEl {
+  position: relative;
+}
+.bg {
+  position: absolute;
+  top: 30%;
+  right: -50%;
+  background-color: var(--color-primary-blue);
+  width: 120%;
+  height: 75%;
+  border-top-left-radius: 120px;
+  border-bottom-left-radius: 120px;
+  z-index: -1;
+}
+.mobileNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.8rem 0 4.8rem 0;
+}
+.hamburger {
+  cursor: pointer;
+}
+
+@media (max-width: 75em) {
+}
+@media (max-width: 44em) {
+}
+@media (max-width: 34em) {
+  .heroTextBox {
+    padding-top: 4.8rem;
+    text-align: center;
+    grid-area: textBox;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .heroImg {
+    grid-area: imgBox;
+    width: 80%;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sectionHero {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "imgBox imgBox"
+      "textBox textBox";
+  }
+}
